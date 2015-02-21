@@ -1,0 +1,23 @@
+{
+  "name": "CreateForm",
+  "version": "0.0.0",
+  "description": "Creation Form",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdrianZelada/CreateForm.git"
+  },
+  "keywords": [
+    "create",
+    "form"
+  ],
+  "author": "Adrian Zelada Torrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianZelada/CreateForm/issues"
+  },
+  "homepage": "https://github.com/AdrianZelada/CreateForm"
+}
