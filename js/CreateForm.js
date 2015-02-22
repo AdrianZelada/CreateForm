@@ -1,14 +1,24 @@
 
-var CreateForm = function(ObjectConfig){		
-	(function(ObjectConfig){
-		for(objectC in ObjectConfig){
-			var x=new schema(ObjectConfig[objectC]);
-			console.log(x);
-		}
-	})(ObjectConfig);
+var CreateForm = function(ObjectConfig){			
+	ObjectConfig.forEach(function(item){
+        //mandar los objetos con la funcion Bind .... enviandole como en el video xD
+	});	
+};
+
+var NewObject={
+	
+	type:'text',
+	label:'Label 1',
+    _id:'_1',
+    mak:function(container){
+        var NewContent=document.createElement('div');
+        var NewLabel=document.createElement('p');
+        var NewInput=document.createElement('input').type(this.type).id(this._id);
 
 
-}	
-var schema=function(objectc){
-		this.type=objectc.type;		
-	}
+       //formar aca los elementos
+
+        container.appendChild();
+    }
+
+}
