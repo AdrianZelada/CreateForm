@@ -1,27 +1,38 @@
+'use strik';
+var CreateForm = function(ObjectConfig){    
 
-var CreateForm = function(ObjectConfig){			
-	ObjectConfig.forEach(function(item){
+
+    var Content = document.getElementById(ObjectConfig.Content);
+    var ObjectForm=ObjectConfig.Forms;
+
+
+	ObjectConfig.Forms.forEach(function(item){
         //mandar los objetos con la funcion Bind .... enviandole como en el video xD
 
-        var mask=NewObject.mak.bind(item);
+       var mask=NewObject.mak.bind(item);
+       Content.appendChild(mask());
+
 
         // agregar los objetos al container ..... add(mask);
-	});	
+	});
 };
 
 var NewObject={
 	
-	type:'text',
+	type:undefined ? 'text':'',
 	label:'Label 1',
     _id:'_1',
-    mak:function(){
+    mak:function(){        
         var NewContent=document.createElement('div');
         var NewLabel=document.createElement('p');
-        var NewInput=document.createElement('input').type(this.type).id(this._id);
+        NewLabel.textContent=this.label;
+        var NewInput=document.createElement('input');
+        NewInput.type=this.type;
+        NewInput.id=this._id;
+        NewContent.appendChild(NewLabel);
+        NewContent.appendChild(NewInput);
 
-
-       //formar aca los elementos
-
+        return NewContent; 
     }
 
 }

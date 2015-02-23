@@ -6,8 +6,32 @@
 	<!--<script type="text/javascript" src="js/test.js"></script>-->
 </head>
 <body>
+<div id="frame"></div>
 <script>
-	new CreateForm([{type:'text'},{type:'text1'}]);
+	new CreateForm({
+        Content:"frame",
+        Forms:[
+            {
+                type:'text',
+                label:"label 1",
+                _id:"name"
+            },
+            {
+                type:'text1',
+                label:"label 2",
+                _id:"lastname"
+            }
+        ]});
+/*
+	var newla=document.createElement('p');	
+// .appendChild(document.createTextNode("hola"))
+
+	newla.textContent="holasas";
+	document.body.appendChild(newla);
+
+	console.log(newla);
+*/
+
 </script>
 
 </body>
