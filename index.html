@@ -12,15 +12,25 @@
         Content:"frame",
         Forms:[
             {
-                type:'text',
+                type:'Group_radio',
                 label:"label 1",
-                _id:"name"
-            },
+                _id:"name",
+                options:[
+                    {
+                        title:'option 1',
+                        value:'option 1'
+                    },
+                    {
+                        title:'option 2',
+                        value:'option 2'
+                    }
+                ]
+            }/*,
             {
                 type:'text1',
                 label:"label 2",
                 _id:"lastname"
-            }
+            }*/
         ]});
 /*
 	var newla=document.createElement('p');	
