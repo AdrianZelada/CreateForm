@@ -12,9 +12,10 @@
         Content:"frame",
         Forms:[
             {
-                type:'Group_radio',
+                type:'radio',
                 label:"label 1",
                 _id:"name",
+                name_group:'Grupo 1',
                 options:[
                     {
                         title:'option 1',
@@ -25,12 +26,28 @@
                         value:'option 2'
                     }
                 ]
-            }/*,
+            },
             {
                 type:'text1',
                 label:"label 2",
                 _id:"lastname"
-            }*/
+            },
+            {
+                type:'checkBox',
+                label:"label check",
+                _id:"chek",
+                name_group:'Grupo 2',
+                options:[
+                    {
+                        title:'check 1',
+                        value:'check 1'
+                    },
+                    {
+                        title:'check 2',
+                        value:'check 2'
+                    }
+                ]
+            }
         ]});
 /*
 	var newla=document.createElement('p');	
