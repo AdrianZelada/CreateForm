@@ -2,62 +2,57 @@
 <html>
 <head>
 	<title>Create Form</title>
-	<script type="text/javascript" src="js/CreateForm.js"></script>
+    <script type="text/javascript" src="js/CreateForm.js"></script>
+    <link rel="stylesheet" href="css/CreateForm.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+
 	<!--<script type="text/javascript" src="js/test.js"></script>-->
 </head>
 <body>
 <div id="frame"></div>
 <script>
-	new CreateForm({
+
+	 new CreateForm({
         Content:"frame",
-        Forms:[
-            {
-                type:'radio',
-                label:"label 1",
-                _id:"name",
-                name_group:'Grupo 1',
-                options:[
-                    {
+         Forms:[
+             {
+                 type: 'radio',
+                 label: "label 1",
+                 _id: "name",
+                 name_group:'Grupo 1',
+                 options:[
+                     {
                         title:'option 1',
-                        value:'option 1'
-                    },
+                         value:'option 1'
+                     },
                     {
-                        title:'option 2',
-                        value:'option 2'
-                    }
-                ]
+                         title:'option 2',
+                         value:'option 2'
+                     }
+                 ]
             },
-            {
-                type:'text1',
-                label:"label 2",
-                _id:"lastname"
+             {
+                 type:'text1',
+                 label:"label 2",
+                 _id:"lastname"
             },
-            {
-                type:'checkBox',
+             {
+                 type:'checkBox',
                 label:"label check",
-                _id:"chek",
-                name_group:'Grupo 2',
-                options:[
-                    {
-                        title:'check 1',
+                 _id:"chek",
+                 name_group:'Grupo 2',
+                 options:[
+                     {
+                         title:'check 1',
                         value:'check 1'
-                    },
-                    {
+                     },
+                     {
                         title:'check 2',
                         value:'check 2'
-                    }
-                ]
-            }
+                     }
+                 ]
+             }
         ]});
-/*
-	var newla=document.createElement('p');	
-// .appendChild(document.createTextNode("hola"))
-
-	newla.textContent="holasas";
-	document.body.appendChild(newla);
-
-	console.log(newla);
-*/
 
 </script>
 
